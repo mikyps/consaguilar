@@ -620,11 +620,25 @@ margin-bottom: 30px;
     }
 }
 @media (min-width: 320px) and (max-width: 767px) {
- 
+    /*HEADER*/
+    .navbar-brand img { height: 70px !important }
+    .slide { width: 80% }
+    h1 { font-size: 30px }
+    h2 { font-size: 36px }
+    .slide h2 { font-size: 36px !important }
+    .project h1 { font-size: 30px }
+    .project a { text-align: left; font-size: 18px }
+    .red{ font-size: 18px }
+    .davinci  { height: inherit; }
+    .link-red { width: 90%; font-size: 18px; margin-bottom: 30px}
+    .about h3 { margin-top: 20px }
+    footer h2 { font-size: 30px }
+    .brand{ width: 100% }
+    .redes  { top: 150px }
     .ad-modal {
         width: 100%;
     }
-    
+     
     .header-top .dropdown-menu {
         right: 0;
         left: auto;

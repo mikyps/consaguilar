@@ -1,36 +1,44 @@
-<!-- =-=-=-=-=-=-= Light Header =-=-=-=-=-=-= -->
-      <div class="colored-header">
-         
-         <!-- Navigation Menu -->
-         <div class="clearfix"></div>
-         <!-- menu start -->
-            <nav id="menu-1" class="mega-menu">
-               <!-- menu list items container -->
-               <section class="menu-list-items">
-                  <div class="container">
-                     <div class="row">
-                        <div class="col-lg-12 col-md-12">
-                           <!-- menu logo -->
-                           <!--<ul class="menu-logo">
-                              <li>
-                                 <a href="index.html"><img src="images/logo.png" alt="logo"> </a>
-                              </li>
-                           </ul>-->
-                           <!-- menu links -->
-                           <ul class="menu-links">
-                              <!-- active class -->
-                              <li><a href="">NOSOTROS</a></li>
-                              <li><a href="">COTIZACIONES</a></li>
-                              <li><a href="">PROYECTO DA VINCI</a></li>
-                              <li><a href="">CONTACTO</a></li>
-                           </ul>
-                           
-                        </div>
-                     </div>
-                  </div>
-               </section>
-            </nav>
-         <!-- menu end -->
-      </div>
-      <!-- Navigation Menu End -->
-      <!-- =-=-=-=-=-=-= Light Header End  =-=-=-=-=-=-= -->
+	<header>
+			  
+              <nav class="navbar navbar-expand-md navbar-dark  fixed-top"><!--bg-dark-->
+                   
+                   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+                     <span class="navbar-toggler-icon"></span>
+                   </button>
+
+                   <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+
+                     <ul class="navbar-nav mr-auto">
+                       <li class="nav-item" [routerLinkActive]="['active']">
+                         <a class="nav-link" [routerLink]="['/nosotros']">NOSOTROS <span class="sr-only">(current)</span></a>
+                       </li>
+                       <li class="nav-item" [routerLinkActive]="['active']">
+                         <a class="nav-link" [routerLink]="['/cotizacion']">COTIZACIONES</a>
+                       </li>
+                       <li class="nav-item" [routerLinkActive]="['active']">
+                         <a class="nav-link" [routerLink]="['/proyecto']">PROYECTO DA VINCI</a>
+                       </li>                       
+                       <li class="nav-item" [routerLinkActive]="['active']">
+                         <a class="nav-link contact" [routerLink]="['/contacto']">CONTACTO</a>
+                       </li>
+                       
+                     </ul>
+                     
+                   </div>
+
+                </nav>
+
+                <div class="slide" >
+                	<a class="navbar-brand" [routerLink]="['']"><img src="assets/images/logo.png" /></a>
+                      <h1>haciendo realidad</h1>
+                      <h2>tus sueños</h2>
+                </div>
+
+                <div class="redes">
+                <a href=""><img src="assets/images/red_01.jpg"></a>
+                <a href=""><img src="assets/images/red_02.jpg"></a>
+                <a href=""><img src="assets/images/red_03.jpg"></a>
+                <a href=""><img src="assets/images/red_04.jpg"></a>
+                </div>
+        </header>
+        
