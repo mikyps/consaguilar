@@ -6,8 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styles: []
 })
 export class HeaderComponent implements OnInit {
-
-  constructor() { }
+  //@ViewChild('slideshow') slideshow: ElementRef;
+  public imageUrlArray:Array<string>;
+  constructor() {
+  	this.imageUrlArray = [ 'assets/images/slide.jpg', 'assets/images/slide.jpg' ]
+  }
 
   ngOnInit() {
   }

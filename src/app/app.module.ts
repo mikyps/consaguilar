@@ -11,18 +11,30 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 
 
+import {SlideshowModule} from 'ng-simple-slideshow';
+import { NgxCarouselModule } from 'ngx-carousel';
+import 'hammerjs';
+import { NosotrosComponent } from './components/nosotros/nosotros.component';
+import { ContactoComponent } from './components/contacto/contacto.component';
+import { CotizacionComponent } from './components/cotizacion/cotizacion.component';
+
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    NosotrosComponent,
+    ContactoComponent,
+    CotizacionComponent
   ],
   imports: [
     BrowserModule,
     app_routing,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    SlideshowModule,
+    NgxCarouselModule
   ],
   providers: [appRoutingProviders],
   bootstrap: [AppComponent]

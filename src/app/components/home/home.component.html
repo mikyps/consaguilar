@@ -51,24 +51,44 @@
 	<div class="col-md-6  col-sm-6 col-xs-12">
 	<h1>TESTIMONIOS</h1>
 	<p class="title1">¿qué dicen las personas de nosotros?</p>
-	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean semper nulla nec orci tempus euismod. Integer hendrerit, diam a porta vestibulum, elit eros finibus nisl, nec ullamcorper ex Ut eu turpis neque. Nulla viverra enim et volu tincidunt odio. Duis eget nulla quis dui tincidunt egestas sed a massa. Phasellus nec consequat lectus. Suspendisse finibus, purus</p>
-	<p>-Lorem Ipsum</p>
+	
+	<ngx-carousel
+        [inputs]="carouselOne"
+        (carouselLoad)="myfunc($event)">
+          <ngx-item NgxCarouselItem>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean semper nulla nec orci tempus euismod. Integer hendrerit, diam a porta vestibulum, elit eros finibus nisl, nec ullamcorper ex Ut eu turpis neque. Nulla viverra enim et volu tincidunt odio. Duis eget nulla quis dui tincidunt egestas sed a massa. Phasellus nec consequat lectus. Suspendisse finibus, purus</p>
+			<p>-Lorem Ipsum</p>
+          </ngx-item>
+          <ngx-item NgxCarouselItem>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean semper nulla nec orci tempus euismod. Integer hendrerit, diam a porta vestibulum, elit eros finibus nisl, nec ullamcorper ex Ut eu turpis neque. Nulla viverra enim et volu tincidunt odio. Duis eget nulla quis dui tincidunt egestas sed a massa. Phasellus nec consequat lectus. Suspendisse finibus, purus</p>
+			<p>-Lorem Ipsum</p>
+          </ngx-item>
+          <ngx-item NgxCarouselItem>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean semper nulla nec orci tempus euismod. Integer hendrerit, diam a porta vestibulum, elit eros finibus nisl, nec ullamcorper ex Ut eu turpis neque. Nulla viverra enim et volu tincidunt odio. Duis eget nulla quis dui tincidunt egestas sed a massa. Phasellus nec consequat lectus. Suspendisse finibus, purus</p>
+			<p>-Lorem Ipsum</p>
+          </ngx-item>
+          <button NgxCarouselPrev class='leftRs'>&lt;</button>
+          <button NgxCarouselNext class='rightRs'>&gt;</button>
+    </ngx-carousel>
+
+	
 	</div>
 </div>
 </div>
 <div class="marca">
 	<h1>CONSTRUIMOS JUNTO A</h1>
+	<br /><br />
 	<div class="container">
 	<div class="brand">
-		<img src="assets/images/d-1.jpg" class="img-circle">
+		<img src="assets/images/marca.jpg" class="img-circle">
 		<p>AGIMEX</p>
 	</div>
 	<div class="brand">
-		<img src="assets/images/d-1.jpg" class="img-circle">
+		<img src="assets/images/marca.jpg" class="img-circle">
 		<p>AGIMEX</p>
 	</div>
 	<div class="brand">
-		<img src="assets/images/d-1.jpg" class="img-circle">
+		<img src="assets/images/marca.jpg" class="img-circle">
 		<p>AGIMEX</p>
 	</div>
 	</div>

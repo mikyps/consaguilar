@@ -25,25 +25,37 @@ h5 { color: #711811; font-size: 30px; font-family: 'FuturaStd'; margin: 0px; tex
 p { font-family: 'FuturaStd';  }
 a:hover { color: #fff }
 .p { font-family: 'TrajanPro' !important }
-.text { font-family: 'FuturaStd'; text-align: center; }
-header { background: url(../images/slide.jpg); height: 1019px; width: 100%; background-repeat: no-repeat !important; background-position: top center !important; background-size:cover !important; display: block;}
+.text { font-family: 'FuturaStd'; text-align: center; }/*slide.jpg**/
+
+header { /*background: url(../images/img-2.jpg);*/ height: 800px; width: 100%; background-repeat: no-repeat !important; background-position: top center !important; background-size:cover !important; display: block;}
 .navbar-nav { margin-top:50px; }
-.slide { text-align: center; width: 1180px; height: 400px; margin: 0px auto; background-color:rgba(113, 0, 0, 0.5); color: #fff; position:relative; top: 400px }
+.slide { text-align: center; 
+	width: 1000px; 
+	height: 400px; 
+	margin: 0px auto; 
+	background-color:rgba(113, 0, 0, 0.5); 
+	color: #fff; 
+	position:absolute;
+	z-index: 900000; 
+	top: 170px; 
+	left: 11%;
+}
 .slide h1{
 	color: #fff;
 	font-family: 'TrajanPro';
 	text-align: center;
 	margin-top:30px;
+	font-size: 30px !important;
 	text-transform: uppercase
 }
 .slide h2{
 	color: #fff;
 	font-family: 'TrajanPro';
 	text-align: center;
-	font-size: 60px !important;
+	font-size: 70px !important;
 	text-transform: uppercase
 }
-.nav-link { font-size: 22px }
+.nav-link { font-size: 26px }
 
 .project { background: #711811; color: #fff; padding: 20px}
 .project a { text-align: right; font-size: 24px; font-family: 'FuturaStd'; color: #fff; padding-top:15px; display: block; }
@@ -80,6 +92,10 @@ header { background: url(../images/slide.jpg); height: 1019px; width: 100%; back
   border-top-right-radius:120px;
   border-bottom-left-radius:120px;
   border-bottom-right-radius:120px;
+  opacity: 0.5;
+}
+.img-circle:hover{
+	opacity: 1;
 }
 .link { font-size:16px; width: 60%; margin: 30px auto; background: #720000; text-align: center; color: #fff !important; padding:10px 0px; display: block; }
 .link-red { width: 70%; margin: 20px auto; background: #720000; text-align: center; font-size:35px;color: #fff !important; padding:10px 0px; display: block; }
@@ -96,5 +112,7 @@ footer p { color: #fff; text-align: center; font-size: 25px; font-family: 'Futur
 .box-footer h3 { color: #680505; font-size: 20px; text-align: center; }
 .box-footer p { color: #817c7c !important; text-align: center; line-height: 25px }
 
-.redes { position: fixed; top:340px; left: 0px; width: 53px; z-index: 90000}
+.redes { position: fixed; top:240px; left: 0px; width: 53px; z-index: 90000}
 .redes a{ display: block; margin-bottom: 2px }
+.leftRs { display: none !important; }
+.rightRs { display: none !important; }
