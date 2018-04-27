@@ -1,47 +1,81 @@
-	<header>
-  <slideshow [imageUrls]="imageUrlArray"></slideshow>
-			  
-              <nav class="navbar navbar-expand-md navbar-dark  fixed-top"><!--bg-dark-->
-                   
-                   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-                     <span class="navbar-toggler-icon"></span>
-                   </button>
+	     <!-- =-=-=-=-=-=-= Light Header =-=-=-=-=-=-= -->
+      <div class="colored-header">
+         <!-- Top Bar -->
+         <div class="header-top">
+            <div class="container">
+               <div class="row">
+                  <!-- Header Top Left -->
+                  <div class="header-top-left col-md-8 col-sm-6 col-xs-12 hidden-xs">
+                           <!-- menu logo -->
+                           <ul class="menu-logo">
+                              <li>
+                                 <a href="index.html"><img src="assets/images/logo.jpg" alt="logo"> </a>
+                              </li>
+                           </ul>
+                  </div>
+                  <!-- Header Top Right Social -->
+                  <div class="header-right col-md-4 col-sm-6 col-xs-12 ">
+                     <div class="pull-right">
+                        <h1>Proyecto</h1>
+                        <h2>DA VINCI</h2>
+                        <ul class="listnone">
+                           <li><a href="#"></a></li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Top Bar End -->
+         <!-- Navigation Menu -->
+         <div class="clearfix"></div>
+         <!-- menu start -->
+            <nav id="menu-1" class="mega-menu">
+               <!-- menu list items container -->
+               <section class="menu-list-items">
+                  <div class="container">
+                     <div class="row">
+                        <div class="col-lg-12 col-md-12">
+                           <!-- menu logo -->
+                           <ul class="menu-logo hidden-md hidden-lg" >
+                              <li>
+                                 <a href="index.html"><img src="assets/images/logo.jpg" alt="logo"> </a>
+                              </li>
+                           </ul>
+                           <!-- menu links -->
+                           <ul class="menu-links">
+                              <li [routerLinkActive]="['active']"><a [routerLink]="['/nosotros']">Nosotros</a></li>
+                              <li [routerLinkActive]="['active']"><a [routerLink]="['/cotizacion']">Cotizaciones</a></li>
+                              <li [routerLinkActive]="['active']"><a [routerLink]="['/contacto']">Contacto</a></li>
+                           </ul>
+                           <!--<ul class="menu-search-bar">
+                              <li>
+                                 <a href="post-ad-1.html" class="btn btn-light"><i class="fa fa-plus" aria-hidden="true"></i> Post Free Ad</a>
+                              </li>
+                           </ul>-->
+                        </div>
+                     </div>
+                  </div>
+               </section>
+            </nav>
+         <!-- menu end -->
+      </div>
+      <!-- Navigation Menu End -->
+      <!-- =-=-=-=-=-=-= Light Header End  =-=-=-=-=-=-= -->
 
-                   <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-
-                     <ul class="navbar-nav mr-auto">
-                       <li class="nav-item" [routerLinkActive]="['active']">
-                         <a class="nav-link" [routerLink]="['/nosotros']">NOSOTROS <span class="sr-only">(current)</span></a>
-                       </li>
-                       <li class="nav-item" [routerLinkActive]="['active']">
-                         <a class="nav-link" [routerLink]="['/cotizacion']">COTIZACIONES</a>
-                       </li>
-                       <li class="nav-item" [routerLinkActive]="['active']">
-                         <a class="nav-link" [routerLink]="['/proyecto']">PROYECTO DA VINCI</a>
-                       </li>                       
-                       <li class="nav-item" [routerLinkActive]="['active']">
-                         <a class="nav-link contact" [routerLink]="['/contacto']">CONTACTO</a>
-                       </li>
-                       
-                     </ul>
-                     
-                   </div>
-
-                </nav>
-
-                <div class="slide" >
-                	<a class="navbar-brand" [routerLink]="['']"><img src="assets/images/logo.png" /></a>
-                      <h1>haciendo realidad</h1>
-                      <h2>tus sueños</h2>
-                </div>
-
-
-
-                <div class="redes">
-                <a href=""><img src="assets/images/red_01.jpg"></a>
-                <a href=""><img src="assets/images/red_02.jpg"></a>
-                <a href=""><img src="assets/images/red_03.jpg"></a>
-                <a href=""><img src="assets/images/red_04.jpg"></a>
-                </div>
-        </header>
-        
+        <div class="slidecontent">
+        <slideshow [imageUrls]="imageUrlArray"></slideshow>
+        <div class="slide" >
+          <!--<a class="navbar-brand" [routerLink]="['']"><img src="assets/images/logo.png" /></a>-->
+              <h1>Haciendo realidad</h1>
+              <h2>TUS SUEÑOS</h2>
+        </div>
+        <div class="chat">
+          <img src="assets/images/chat.png">
+        </div>
+        <div class="redes">
+                <a href=""><i class="fa fa-facebook"></i></a>
+                <a href=""><i class="fa fa-twitter"></i></a>
+                <a href=""><i class="fa fa-instagram"></i></a>
+        </div>
+        </div>

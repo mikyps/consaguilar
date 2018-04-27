@@ -620,25 +620,29 @@ margin-bottom: 30px;
     }
 }
 @media (min-width: 320px) and (max-width: 767px) {
-    /*HEADER*/
-    .navbar-brand img { height: 70px !important }
-    .slide { width: 80% }
-    h1 { font-size: 30px }
-    h2 { font-size: 36px }
-    .slide h2 { font-size: 36px !important }
-    .project h1 { font-size: 30px }
-    .project a { text-align: left; font-size: 18px }
-    .red{ font-size: 18px }
-    .davinci  { height: inherit; }
-    .link-red { width: 90%; font-size: 18px; margin-bottom: 30px}
-    .about h3 { margin-top: 20px }
-    footer h2 { font-size: 30px }
-    .brand{ width: 100% }
-    .redes  { top: 150px }
+    .infodir img { height: 50px; padding-bottom: 20px }
+    .infodir p{ font-size: 20px }
+    .infodir { padding-top: 5px; }
+    .text1 { font-size: 42px; line-height: 48px }
+    .text2 { font-size: 30px; line-height: 40px }
+    .text3 { font-size: 30px; line-height: 40px }
+    .read { width: 72% }
+    .quote img { height: 50px }
+    .textquote { margin-top: 3px }
+    .quote p { padding-top: 20px; font-size: 24px; line-height: inherit;}
+    .btnwhite { margin: 0px }
+    .choose { padding-top: 50px }
+    .zoom { height: inherit; }
+    .clients { height: inherit; }
+    .box-testimonial { width: inherit;height: inherit; margin-bottom: 20px }
+    .delivery { padding: inherit; }
+    .box { height: inherit; }
+    .process .detail { font-size: 24px }
+    .social li { padding: 20px 7px }
     .ad-modal {
         width: 100%;
     }
-     
+    
     .header-top .dropdown-menu {
         right: 0;
         left: auto;
