@@ -2,11 +2,17 @@ import { ModuleWithProviders } from  '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 import {
-  HomeComponent
+  HomeComponent,
+  CotizacionComponent,
+  ContactoComponent,
+  NosotrosComponent
 } from "./components/index.page";
 
 const app_routes: Routes = [
   { path: '', component: HomeComponent },
+  { path: 'cotizacion', component: CotizacionComponent },
+  { path: 'contacto', component: ContactoComponent },
+  { path: 'nosotros', component: NosotrosComponent },
   { path: '**', pathMatch: 'full', redirectTo: '' }
 ];
 

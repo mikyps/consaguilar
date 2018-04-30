@@ -620,25 +620,30 @@ margin-bottom: 30px;
     }
 }
 @media (min-width: 320px) and (max-width: 767px) {
-    .infodir img { height: 50px; padding-bottom: 20px }
-    .infodir p{ font-size: 20px }
-    .infodir { padding-top: 5px; }
-    .text1 { font-size: 42px; line-height: 48px }
-    .text2 { font-size: 30px; line-height: 40px }
-    .text3 { font-size: 30px; line-height: 40px }
-    .read { width: 72% }
-    .quote img { height: 50px }
-    .textquote { margin-top: 3px }
-    .quote p { padding-top: 20px; font-size: 24px; line-height: inherit;}
-    .btnwhite { margin: 0px }
-    .choose { padding-top: 50px }
-    .zoom { height: inherit; }
-    .clients { height: inherit; }
-    .box-testimonial { width: inherit;height: inherit; margin-bottom: 20px }
-    .delivery { padding: inherit; }
-    .box { height: inherit; }
-    .process .detail { font-size: 24px }
-    .social li { padding: 20px 7px }
+    .pull-right { float: none !important }
+    .mega-menu img { height: 70px !important }
+    .slidecontent h1 { font-size: 24px }
+    .slidecontent h2 { font-size: 30px; padding: 10px; width: inherit; }
+    .chat { display: none; }
+    .project h1 { font-size: 40px; }
+    .project h2 { font-size: 40px  }
+    .btn-line { margin:10px auto; width: 293px }
+    .imgproject p { font-size: 24px; }
+    .imgproject h2 { font-size: 34px }
+    h2 { font-size: 36px }
+    h1 { font-size: 36px }
+    .box-testimonio img { display: none; }
+    .box-testimonio { width: inherit; height: inherit !important; }
+    .btn-ok { width: inherit; font-size: 24px }
+    .nospace { padding: 20px }
+    .box-about { width: inherit; padding: 0px }
+    .btn-oks { width: inherit; font-size: 24px }
+    footer { height: inherit; }
+    .listfoot2 li { font-size: 20px }
+    .foot { padding: 20px }
+    .listfoot { margin-top: 20px }
+    .redes2 { padding: 0px }
+    .menu-links li a { color: #000 }
     .ad-modal {
         width: 100%;
     }

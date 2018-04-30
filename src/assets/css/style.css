@@ -887,6 +887,7 @@ ul {
 }
 .mega-menu > section.menu-list-items {
 	background-color: transparent;
+	padding: 0px !important
 }
 .main-menu {
 	background: #363c48 none repeat scroll 0 0;
@@ -8250,9 +8251,10 @@ h2{ font-size: 62px; color: #212021;  font-family: 'FuturaStdBold'; text-align: 
 
 #menu-1 { background: #212021  }
 .mega-menu.desktopTopFixed .menu-list-items { position: relative !important;  }
-.mega-menu .menu-links > li > a { color: #fff !important; font-size: 30px !important; text-transform: inherit !important;}
-.mega-menu .menu-links > li { float: none !important; display: inline-block !important; width: auto !important; }
-.mega-menu .menu-links { width: 43%; margin:0px auto !important;}
+.mega-menu .menu-links > li > a { padding:0px !important; color: #fff !important; font-size: 30px !important; text-transform: inherit !important;}
+.mega-menu .menu-links > li { padding: 20px 20px !important; float: none !important; display: inline-block !important; width: auto !important; }
+.mega-menu .menu-links { width: 48%; margin:0px auto !important; float: none !important; }
+.active { border-bottom:10px solid #740000; }
 .header-right h1 {
 	color: #212021;
 	font-size: 40px;
@@ -8280,7 +8282,9 @@ h2{ font-size: 62px; color: #212021;  font-family: 'FuturaStdBold'; text-align: 
 .project a {  }
 .project h1 { color: #fff; text-align: left; font-size: 52px; line-height: 60px; margin: 0px !important}
 .project h2 { color: #fff; text-align: left; font-size: 62px; font-family: 'FuturaStdBold';}
-.btn-line { margin-top: 40px; border: 1px solid #797979; width: 405px; height: 90px;  line-height:90px; text-align: center;  font-size: 24px; font-family: 'FuturaStd'; color: #fff;  display: block;}
+.btn-line { background-image:url(../images/linered.png); background-position: right bottom; background-repeat: no-repeat; margin-top: 40px; border: 1px solid #797979; width: 405px; height: 90px;  line-height:90px; text-align: center;  font-size: 24px; font-family: 'FuturaStd'; color: #fff;  display: block;}
+.btn-line-w { background-image:url(../images/linered.png); background-position: right bottom; background-repeat: no-repeat; margin-top: 40px; border: 1px solid #797979; width: 100%; height: 90px;  line-height:90px; text-align: center;  font-size: 24px; font-family: 'FuturaStd'; color: #fff;  display: block;}
+.btn-line-s { background: #710000; background-image:url(../images/linewhite.png); background-position: right bottom; background-repeat: no-repeat; margin-top: 40px; margin-bottom: 40px;  border: 1px solid #710000; width: 100%; height: 90px;  line-height:90px; text-align: center;  font-size: 24px; font-family: 'FuturaStd'; color: #fff;  display: block; color: #fff}
 
 .imgproject { height:795px; border-bottom: 10px solid #212021; background: url(../images/building.jpg); position: relative;}
 .imgproject p { font-size: 42px; color: #212021; text-align: center; margin-top: 250px }
@@ -8293,8 +8297,9 @@ h2{ font-size: 62px; color: #212021;  font-family: 'FuturaStdBold'; text-align: 
 .link { font-size:30px; text-align: center; color: #fff !important; padding:10px 0px; display: block; }
 
 
-.content-testimonio{ width: 80%; margin: 0px auto; }
-.testimonio { border-bottom:10px solid #740000;padding-top: 100px; background: #e4e4e4; background-image: url(../images/bck-plomo.jpg); width: 100%; background-position: top center; background-repeat: no-repeat; }
+.content-testimonio{ width: 100%; margin: 0px auto; }
+.banner{ /*width:80% !important;margin: 0px auto;*/ padding-left: 10%; padding-right:  10% }
+.testimonio { position: relative; border-bottom:10px solid #740000;padding-top: 100px; background: #e4e4e4; padding-bottom: 100px; background-image: url(../images/bck-plomo.jpg); width: 100%; background-position: top center; background-repeat: no-repeat; }
 .testimonio h1{ color: #fff }
 .testimonio p { font-family: 'FuturaStd'; color: #212021; font-size: 20px; text-align: center; line-height: 24px }
 .textred { color: #740000 !important; text-align: left !important }
@@ -8346,11 +8351,25 @@ h2{ font-size: 62px; color: #212021;  font-family: 'FuturaStdBold'; text-align: 
 .about h4{ color: #7c7c7c; font-size: 18px; text-align: left; margin:10px 0px; }
 .about p{ color: #7c7c7c; font-size: 24px; line-height: 28px; text-align: justify; }
 .box-about { width: 580px; margin:0px auto; padding-top: 100px; }
+.box-form { width: 580px; margin:0px auto; padding-top: 0px; }
+.box-form textarea{ 
+	background-color: #fff;
+	background-image: none;
+	border: 1px solid #ccc;
+	border-radius: 1px;
+	box-shadow: none;
+	color: #555;
+	font-size: 14px;
+	height: auto;
+	width: 100%;
+	padding: 15px 12px;
+}
 .nospace { padding: 0px; margin:0px; }
 
 .bck-plomo { background: url(../images/bck.jpg); color: #fff;  height: 306px; padding-top: 80px }
 .bck-red { background: url(../images/bckred.jpg); height: 203px; width: 100%;padding-top: 40px }
-.btn-ok{ border:1px solid #797979; color: #fff; font-size: 40px; text-align: center; width: 500px; height: 145px; line-height: 145px; margin:0px auto;  }
+.btn-ok{ background-image:url(../images/linered.png); background-position: right bottom; background-repeat: no-repeat; border:1px solid #797979; color: #fff; font-size: 40px; text-align: center; width: 500px; height: 145px; line-height: 145px; margin:0px auto;  }
+.btn-oks{ background-image:url(../images/linewhite.png); background-position: right bottom; background-repeat: no-repeat; border:1px solid #797979; color: #fff; font-size: 40px; text-align: center; width: 500px; height: 145px; line-height: 145px; margin:0px auto;  }
 /**Footer**/
 footer { position: relative; background: url(../images/footer.jpg); background-position: center top; width: 100%; height: 468px }
 footer h2 { color: #fff; text-align: center;padding-top: 125px; font-size: 46px }
@@ -8379,5 +8398,12 @@ footer p { color: #fff; text-align: center; font-size: 20px; font-family: 'Futur
 .line1 { width: 390px; border-top:1px solid #740000; margin:0px auto; padding-bottom: 100px }
 .line2 { width: 390px; border-top:1px solid #fff; margin:0px auto; padding-bottom: 100px }
 .more{ width: 91px; height: 93px; margin: 50px auto }
-.leftRs { display: none !important; }
-.rightRs { display: none !important; }
+.leftRs { position: absolute; left: 5%; top: 50px; text-indent: -9000px; background: url(../images/r-l.jpg); width: 45px; height: 45px; border:0px; }
+.rightRs { position: absolute; right: 5%; top: 50px;  text-indent: -9000px; background: url(../images/r-r.jpg); width: 45px; height: 45px; border:0px;  }
+
+.slideshow-container[_ngcontent-c1] .slick-dots[_ngcontent-c1] li[_ngcontent-c1] button[_ngcontent-c1]::before {
+	border-radius: 10px !important;
+	width: 15px !important;
+	height: 15px !important
+}
+.slideshow-container[_ngcontent-c1] .slick-dots[_ngcontent-c1] { bottom: 80px !important }
