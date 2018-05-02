@@ -659,7 +659,7 @@ ul {
 /* =-=-=-=-=-=-= Header Top Bar  =-=-=-=-=-=-= */
 .header-top {
 	background: url(../images/header.jpg);
-	height: 190px;
+	height: 130px;
 	width: 100%;
 	background-position: top center;
 }
@@ -8252,14 +8252,14 @@ h2{ font-size: 62px; color: #212021;  font-family: 'FuturaStdBold'; text-align: 
 #menu-1 { background: #212021  }
 .mega-menu.desktopTopFixed .menu-list-items { position: relative !important;  }
 .mega-menu .menu-links > li > a { padding:0px !important; color: #fff !important; font-size: 30px !important; text-transform: inherit !important;}
-.mega-menu .menu-links > li { padding: 20px 20px !important; float: none !important; display: inline-block !important; width: auto !important; }
+.mega-menu .menu-links > li { padding: 10px 20px !important; float: none !important; display: inline-block !important; width: auto !important; }
 .mega-menu .menu-links { width: 48%; margin:0px auto !important; float: none !important; }
 .active { border-bottom:10px solid #740000; }
 .header-right h1 {
 	color: #212021;
 	font-size: 40px;
 	line-height: 40px;
-	margin-top: 40px;
+	margin-top: 10px;
 	text-align: center;
 }
 .header-right h2{
@@ -8269,11 +8269,11 @@ h2{ font-size: 62px; color: #212021;  font-family: 'FuturaStdBold'; text-align: 
 	text-align: center;
 }
 
-.slidecontent { height:790px; border-bottom:10px solid #740000; position: relative; }
-.slide { position: absolute; z-index: 900000; top: 240px; width: 100%;  }
+.slidecontent { height:550px; border-bottom:10px solid #740000; position: relative; }
+.slide { position: absolute; z-index: 900000; top: 100px; width: 100%;  }
 .slidecontent h1 { color: #212021; font-size: 52px; text-align: center; font-family: 'FuturaStd';}
-.slidecontent h2 { color: #740000; width:700px; margin: 0px auto; font-size: 90px; text-align: center;font-family: 'FuturaStdBold'; border:1px solid #212021; padding: 45px 0px}
-.redes { position: absolute; top:200px; left: 0px; background:url(../images/bck-red.png); width: 57px; height:392px; padding-top: 130px; z-index: 90000}
+.slidecontent h2 { color: #740000; width:700px; margin: 0px auto; font-size: 90px; text-align: center;font-family: 'FuturaStdBold'; border:1px solid #212021; padding: 35px 0px}
+.redes { position: absolute; top:70px; left: 0px; background:url(../images/bck-red.png); width: 57px; height:392px; padding-top: 130px; z-index: 90000}
 .redes a{ display: block; margin-bottom: 20px; margin-left: 10px }
 .redes i { color: #fff; font-size: 30px }
 .chat {  position: absolute; bottom:-10px; right: 150px; width: 375px; height: 60px }
@@ -8407,3 +8407,4 @@ footer p { color: #fff; text-align: center; font-size: 20px; font-family: 'Futur
 	height: 15px !important
 }
 .slideshow-container[_ngcontent-c1] .slick-dots[_ngcontent-c1] { bottom: 80px !important }
+.menu-logo img { height: 130px }

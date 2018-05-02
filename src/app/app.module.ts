@@ -17,6 +17,7 @@ import 'hammerjs';
 import { NosotrosComponent } from './components/nosotros/nosotros.component';
 import { ContactoComponent } from './components/contacto/contacto.component';
 import { CotizacionComponent } from './components/cotizacion/cotizacion.component';
+import { DepartamentoComponent } from './components/departamento/departamento.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { CotizacionComponent } from './components/cotizacion/cotizacion.componen
     FooterComponent,
     NosotrosComponent,
     ContactoComponent,
-    CotizacionComponent
+    CotizacionComponent,
+    DepartamentoComponent
   ],
   imports: [
     BrowserModule,

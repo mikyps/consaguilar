@@ -12,7 +12,7 @@ export class HeaderComponent implements OnInit {
   //@ViewChild('slideshow') slideshow: ElementRef;
   public imageUrlArray:Array<string>;
   constructor() {
-  	this.imageUrlArray = [ 'assets/images/slide.jpg', 'assets/images/slide.jpg' ]
+  	this.imageUrlArray = [ 'assets/images/slide.jpg', 'assets/images/minimalista/lounge.jpg', 'assets/images/minimalista/diningroom.jpg' ]
   }
 
   ngOnInit() {
