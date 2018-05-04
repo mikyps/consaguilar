@@ -1,0 +1,174 @@
+<div class="departamento">
+	<div class="container">
+	<h1>Un Departamento</h1>
+	<h2>A Medida</h2>
+	<div class="line1"></div>
+	<div class="row">
+		<p>El departmento que buscas es para:</p>
+		<div class="col-md-4 col-sm-4 col-xs-12">
+			
+			<img src="assets/images/img-2.jpg">
+			
+		</div>
+		<div class="nospace persons col-md-8  col-sm-8 col-xs-12">
+			<a (click)="option(top)">
+			<img src="assets/images/persona.jpg" height="110">
+			<p>Persona</p>
+			</a>
+			<a (click)="option(top)">
+			<img src="assets/images/pareja.png" height="110">
+			<p>Pareja</p>
+			</a>
+			<a (click)="option(top)">
+			<img src="assets/images/familia.png" height="110">
+			<p>Familia</p>
+			</a>
+			<a (click)="option(top)">
+			<img src="assets/images/adultos.png" height="110">
+			<p>Adulto Mayor</p>
+			</a>
+			<a (click)="option(top)">
+			<img src="assets/images/inversionista.png" height="110">
+			<p>Inversionista</p>
+			</a>
+		</div>
+		<div class="clearfix"></div>
+		<p class="pull-right">...Estas a 1 minuto de conocer el departamento que mejor se adecua a ti</p>
+	</div>
+	
+</div>
+</div>
+	<div #top></div>
+	<div class="personaliza" style="display:none">
+	<div class="row">
+		<h1>Estos son los tamanos que te recomendamos</h1>
+	</div>
+	<div class="bck-red">
+		<div class="btn-oks" [routerLink]="['/cotizacion']">COTIZA</div>
+	</div>
+	<div class="departamentos">
+	<div class="container">	
+	<div class="row">
+		
+		<div class="planos col-md-3 col-sm-3 col-xs-12">
+			
+			<img src="assets/images/img-2.jpg">
+			<p>50 m2</p>
+			
+		</div>
+		<div class="planos col-md-3 col-sm-3 col-xs-12">
+			
+			<img src="assets/images/img-2.jpg">
+			<p>65 m2</p>
+		</div>
+		<div class="planos col-md-3 col-sm-3 col-xs-12">
+			
+			<img src="assets/images/img-2.jpg">
+			<p>75 m2</p>
+		</div>
+		<div class="planos col-md-3 col-sm-3 col-xs-12">
+			
+			<img src="assets/images/img-2.jpg">
+			<p>100 m2</p>
+		</div>
+	</div>
+	<div class="row">
+		<h1>PERSONALIZA TU DEPARTAMENTO</h1>
+			<div class="col-md-3 col-sm-3 col-xs-12">
+			<div class="serv" [routerLink]="['departamento', 'domotica']">
+				<img src="assets/images/serv-1.jpg">
+				<div class="btnred" >Domotica</div>
+			</div>
+			</div>
+			<div class="col-md-3 col-sm-3 col-xs-12">
+			<div class="serv" [routerLink]="['departamento', 'personalizado']">
+				<img src="assets/images/serv-2.jpg">
+				<div class="btnred">Diseño Personalizado</div>
+			</div>
+			</div>
+			<div class="col-md-3 col-sm-3 col-xs-12">
+			<div class="serv" [routerLink]="['departamento', 'estilo']">
+				<img src="assets/images/serv-3.jpg">
+				<div class="btnred">Estilo</div>
+			</div>
+			</div>
+			<div class="col-md-3 col-sm-3 col-xs-12">
+				<div class="serv" [routerLink]="['departamento', 'amoblado']">
+				<img src="assets/images/serv-3.jpg">
+				<div class="btnred">Muebles</div>
+			</div>
+			</div>
+		<p class="slogan">...Un departamento es una de las compras mas importantes<br /> Aprovecha!...ahora puedes PERSONALIZARLO...</p>
+
+		<h1>CONOCE NUESTRAS AREAS COMUNES</h1>
+		<div class="davinci">
+
+	    <div class="container">
+		<div class="row">
+			<div class="col-md-4  col-sm-4 col-xs-12">
+				<div class="davinci-box">
+					<img src="assets/images/p_01.jpg">
+				</div>
+				<a class="link">Excelente Ubicacion</a>
+			</div>
+			<div class="col-md-4  col-sm-4 col-xs-12">
+				<div class="davinci-box">
+					<img src="assets/images/p_02.jpg">
+				</div>
+				<a class="link">Piscina sin fin</a>
+			</div>
+			<div class="col-md-4  col-sm-4 col-xs-12">
+				<div class="davinci-box">
+					<img src="assets/images/p_03.jpg">
+				</div>
+				<a class="link">Terraza Panoramica</a>
+			</div>
+			<div class="clearfix"></div>
+
+			<div class="col-md-4  col-sm-4 col-xs-12">
+				<div class="davinci-box">
+					<img src="assets/images/p_04.jpg">
+				</div>
+				<a class="link">Play Room</a>
+			</div>
+
+			<div class="col-md-4  col-sm-4 col-xs-12">
+				<div class="davinci-box">
+					<img src="assets/images/p_05.jpg">
+				</div>
+				<a class="link">Super mercado</a>
+			</div>
+			<div class="col-md-4  col-sm-4 col-xs-12">
+				<div class="davinci-box">
+					<img src="assets/images/p_06.jpg">
+				</div>
+				<a class="link">Wifi</a>
+			</div>
+			<div class="clearfix"></div>
+			
+			<div class="col-md-4  col-sm-4 col-xs-12">
+				<div class="davinci-box">
+					<img src="assets/images/p_07.jpg">
+				</div>
+				<a class="link">Parrileros</a>
+			</div>
+			<div class="col-md-4  col-sm-4 col-xs-12">
+				<div class="davinci-box">
+					<img src="assets/images/p_08.jpg">
+				</div>
+				<a class="link">Sala de cine</a>
+			</div>
+			
+			
+		</div>
+		
+	</div>
+
+		</div>
+
+	</div>
+
+	</div>
+</div>
+
+</div>

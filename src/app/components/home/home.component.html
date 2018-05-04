@@ -6,7 +6,7 @@
         <h2>DA VINCI</h2>
         </div>
         <div class="col-md-4  col-sm-4 col-xs-12">
-        	<a class="btn-line" href="#">ELIGE TU DEPARTAMENTO</a>
+        	<a class="btn-line" [routerLink]="['/elige-departamento']">ELIGE TU DEPARTAMENTO</a>
         </div>
     </div>
     </div>
@@ -53,15 +53,15 @@
 		</div>
 		<div class="col-md-3  col-sm-3 col-xs-12">
 			<p>Ademas puedes incluir a tu departamento</p>
-			<div class="serv" [routerLink]="['departamento/domotica']">
+			<div class="serv" [routerLink]="['departamento', 'domotica']">
 				<img src="assets/images/serv-1.jpg">
 				<div class="btnred" >Domotica</div>
 			</div>
-			<div class="serv" [routerLink]="['departamento/personalizado']">
+			<div class="serv" [routerLink]="['departamento', 'personalizado']">
 				<img src="assets/images/serv-2.jpg">
 				<div class="btnred">Diseño Personalizado</div>
 			</div>
-			<div class="serv" [routerLink]="['departamento/estilo']">
+			<div class="serv" [routerLink]="['departamento', 'estilo']">
 				<img src="assets/images/serv-3.jpg">
 				<div class="btnred">Estilo</div>
 			</div>
@@ -214,7 +214,7 @@ changes. Lol Best company great prices and amazing staff!</p>
 	</div>
 </div>
 <div class="bck-plomo">
-	<div class="btn-ok">Elige Tu DEPARTAMENTO</div>
+	<div class="btn-ok" [routerLink]="['/elige-departamento']">Elige Tu DEPARTAMENTO</div>
 </div>
 <div class="about">
 	<h1>Por que somos un</h1>		
@@ -222,7 +222,7 @@ changes. Lol Best company great prices and amazing staff!</p>
 	<div class="line1"></div>
 		<div class="row">
 			
-			<div class="nospace col-md-6  col-sm-6 col-xs-12" [routerLink]="['departamento/domotica']">
+			<div class="nospace col-md-6  col-sm-6 col-xs-12" [routerLink]="['departamento', 'domotica']">
 				<div class="box-about">
 				<h3><img src="assets/images/arrow.jpg" > Domotica</h3>
 
@@ -237,7 +237,7 @@ changes. Lol Best company great prices and amazing staff!</p>
 			<div class="nospace col-md-6  col-sm-6 col-xs-12">
 				<img src="assets/images/img-2.jpg">
 			</div>
-			<div class="nospace col-md-6  col-sm-6 col-xs-12" [routerLink]="['departamento/estilo']">
+			<div class="nospace col-md-6  col-sm-6 col-xs-12" [routerLink]="['departamento', 'estilo']">
 				<div class="box-about">
 				<h3><img src="assets/images/arrow.jpg" > Estilo</h3>
 
@@ -247,7 +247,7 @@ changes. Lol Best company great prices and amazing staff!</p>
 			<div class="clearfix"></div>
 
 			
-			<div class="nospace col-md-6  col-sm-6 col-xs-12" [routerLink]="['departamento/personalizado']">
+			<div class="nospace col-md-6  col-sm-6 col-xs-12" [routerLink]="['departamento', 'personalizado']">
 				<div class="box-about">
 				<h3><img src="assets/images/arrow.jpg" > Disenio y decoracion personalizado</h3>
 				
@@ -263,7 +263,7 @@ changes. Lol Best company great prices and amazing staff!</p>
 			<div class="nospace col-md-6  col-sm-6 col-xs-12">
 				<img src="assets/images/img-4.jpg">
 			</div>
-			<div class="nospace col-md-6  col-sm-6 col-xs-12" [routerLink]="['departamento/amoblado']">
+			<div class="nospace col-md-6  col-sm-6 col-xs-12" [routerLink]="['departamento', 'amoblado']">
 				<div class="box-about">
 				<h3><img src="assets/images/arrow.jpg" > Amoblado del departamento</h3>
 				
@@ -277,5 +277,5 @@ changes. Lol Best company great prices and amazing staff!</p>
 	
 </div>
 <div class="bck-red">
-	<div class="btn-oks">Elige Tu DEPARTAMENTO</div>
+	<div class="btn-oks" [routerLink]="['/elige-departamento']">Elige Tu DEPARTAMENTO</div>
 </div>

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild, ViewEncapsulation, AfterViewChecked, ElementRef,  HostListener } from '@angular/core';
 
 declare var jquery:any;
 declare var $ :any;
@@ -6,14 +6,28 @@ declare var $ :any;
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
-  styles: []
+  styles: [],
+  encapsulation: ViewEncapsulation.None,
+
 })
 export class HeaderComponent implements OnInit {
   //@ViewChild('slideshow') slideshow: ElementRef;
   public imageUrlArray:Array<string>;
+  @HostListener('window:scroll', ['$event']) 
+  scrollHandler(event) {
+      console.debug("Scroll Event");
+      $('.redes').css('position', 'fixed');
+  }
+  scrollHandler2(event) {
+      console.debug("Scroll Event");
+      $('.btn-cot').css('position', 'fixed');
+  }
+
   constructor() {
   	this.imageUrlArray = [ 'assets/images/slide.jpg', 'assets/images/minimalista/lounge.jpg', 'assets/images/minimalista/diningroom.jpg' ]
   }
+
+ 
 
   ngOnInit() {
     /* ======= Template MegaMenu  ======= */

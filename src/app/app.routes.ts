@@ -6,7 +6,8 @@ import {
   CotizacionComponent,
   ContactoComponent,
   NosotrosComponent,
-  DepartamentoComponent
+  DepartamentoComponent,
+  RegistroComponent
 } from "./components/index.page";
 
 const app_routes: Routes = [
@@ -14,6 +15,7 @@ const app_routes: Routes = [
   { path: 'cotizacion', component: CotizacionComponent },
   { path: 'contacto', component: ContactoComponent },
   { path: 'nosotros', component: NosotrosComponent },
+  { path: 'elige-departamento', component: RegistroComponent },
   { path: 'departamento/:tipo', component: DepartamentoComponent },
   { path: '**', pathMatch: 'full', redirectTo: '' }
 ];

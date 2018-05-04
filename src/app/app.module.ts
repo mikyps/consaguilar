@@ -18,8 +18,11 @@ import { NosotrosComponent } from './components/nosotros/nosotros.component';
 import { ContactoComponent } from './components/contacto/contacto.component';
 import { CotizacionComponent } from './components/cotizacion/cotizacion.component';
 import { DepartamentoComponent } from './components/departamento/departamento.component';
+import { RegistroComponent } from './components/registro/registro.component';
+import { ScrollToModule } from 'ng2-scroll-to-el';
 
 @NgModule({
+
   declarations: [
     AppComponent,
     HomeComponent,
@@ -28,7 +31,8 @@ import { DepartamentoComponent } from './components/departamento/departamento.co
     NosotrosComponent,
     ContactoComponent,
     CotizacionComponent,
-    DepartamentoComponent
+    DepartamentoComponent,
+    RegistroComponent
   ],
   imports: [
     BrowserModule,
@@ -36,7 +40,8 @@ import { DepartamentoComponent } from './components/departamento/departamento.co
     FormsModule,
     HttpClientModule,
     SlideshowModule,
-    NgxCarouselModule
+    NgxCarouselModule,
+    ScrollToModule.forRoot()
   ],
   providers: [appRoutingProviders],
   bootstrap: [AppComponent]
