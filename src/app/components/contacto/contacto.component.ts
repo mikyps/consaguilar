@@ -1,5 +1,6 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import {  } from '@types/googlemaps';
+import { Router, NavigationEnd } from '@angular/router';
 @Component({
   selector: 'app-contacto',
   templateUrl: './contacto.component.html',
@@ -9,9 +10,16 @@ export class ContactoComponent implements OnInit {
   @ViewChild('gmap') gmapElement: any;
   map: google.maps.Map;
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
+    this.router.events.subscribe((evt) => {
+            if (!(evt instanceof NavigationEnd)) {
+                return;
+            }
+            window.scrollTo(0, 0)
+    });
+
   	let mapProp = {
       zoom: 13,
       center: new google.maps.LatLng(49.193561, -123.122752),

@@ -20,6 +20,8 @@ import { CotizacionComponent } from './components/cotizacion/cotizacion.componen
 import { DepartamentoComponent } from './components/departamento/departamento.component';
 import { RegistroComponent } from './components/registro/registro.component';
 import { ScrollToModule } from 'ng2-scroll-to-el';
+import { MarcaComponent } from './components/marca/marca.component';
+import { ProyectoComponent } from './components/proyecto/proyecto.component';
 
 @NgModule({
 
@@ -32,7 +34,9 @@ import { ScrollToModule } from 'ng2-scroll-to-el';
     ContactoComponent,
     CotizacionComponent,
     DepartamentoComponent,
-    RegistroComponent
+    RegistroComponent,
+    MarcaComponent,
+    ProyectoComponent
   ],
   imports: [
     BrowserModule,

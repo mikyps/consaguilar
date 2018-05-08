@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router, ActivatedRoute, Params } from '@angular/router';
+import { Router, NavigationEnd, ActivatedRoute, Params } from '@angular/router';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Http, Response, Headers } from '@angular/http';
 
@@ -30,7 +30,7 @@ export class DepartamentoComponent implements OnInit {
         if (params['tipo'] == 'domotica') {
           this.title1 = 'Un departamento';
           this.title2 ='Inteligente';
-          $('.project').hide();
+          $('#project').hide();
           this.htmltext = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean semper nulla nec orci tempus euismod. Integer hendrerit, diam a porta vestibulum, elit eros finibus nisl, nec ullamcorper ex Ut eu turpis.';
           this.imageUrlArray = [ 'assets/images/domotica/smart-home-3096219_1920.jpg','assets/images/domotica/smart-home-3096224_1920.jpg' ]
         }
@@ -38,7 +38,7 @@ export class DepartamentoComponent implements OnInit {
         	if (params['tipo'] == 'estilo' || params['tipo'] == 'minimalista') {
             this.title1 = 'Estilo';
             this.title2 ='Minimalista';
-            $('.project').show();
+            $('#project').show();
             this.htmltext = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean semper nulla nec orci tempus euismod. Integer hendrerit, diam a porta vestibulum, elit eros finibus nisl, nec ullamcorper ex Ut eu turpis.';
             this.imageUrlArray = [ 'assets/images/diningroom.jpg','assets/images/lounge.jpg' ]
         	}
@@ -47,7 +47,7 @@ export class DepartamentoComponent implements OnInit {
             if (params['tipo'] == 'contemporaneo') {
                 this.title1 = 'Estilo';
                 this.title2 ='Contemporaneo';
-                $('.project').show();
+                $('#project').show();
                 this.htmltext = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean semper nulla nec orci tempus euismod. Integer hendrerit, diam a porta vestibulum, elit eros finibus nisl, nec ullamcorper ex Ut eu turpis.';
                 this.imageUrlArray = [ 'assets/images/contemporaneo/indoors.jpg', 'assets/images/contemporaneo/kitchen.jpg' ]
             }
@@ -56,7 +56,7 @@ export class DepartamentoComponent implements OnInit {
               if (params['tipo'] == 'amoblado') {
                 this.title1 = 'Departamento';
                 this.title2 ='llave en mano';
-                $('.project').hide();
+                $('#project').hide();
                 this.htmltext = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean semper nulla nec orci tempus euismod. Integer hendrerit, diam a porta vestibulum, elit eros finibus nisl, nec ullamcorper ex Ut eu turpis.';
                 this.imageUrlArray = [ 'assets/images/muebles/04.jpg','assets/images/muebles/05.jpg','assets/images/muebles/06.jpg' ]
 
@@ -65,7 +65,7 @@ export class DepartamentoComponent implements OnInit {
               {
                 this.title1 = 'Departamento';
                 this.title2 ='llave en mano';
-                $('.project').hide();
+                $('#project').hide();
                 this.htmltext = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean semper nulla nec orci tempus euismod. Integer hendrerit, diam a porta vestibulum, elit eros finibus nisl, nec ullamcorper ex Ut eu turpis.';
                 this.imageUrlArray = [ 'assets/images/personalizado/interior-2685521_1920.jpg','assets/images/personalizado/interior-3012218_1920.png' ]
               }
@@ -78,7 +78,12 @@ export class DepartamentoComponent implements OnInit {
   }
 
   ngOnInit() {
-
+    this._router.events.subscribe((evt) => {
+            if (!(evt instanceof NavigationEnd)) {
+                return;
+            }
+            window.scrollTo(0, 0)
+    });
     
   }
 

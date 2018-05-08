@@ -15,13 +15,13 @@ export class HeaderComponent implements OnInit {
   public imageUrlArray:Array<string>;
   @HostListener('window:scroll', ['$event']) 
   scrollHandler(event) {
-      console.debug("Scroll Event");
+      //console.debug("Scroll Event");
       $('.redes').css('position', 'fixed');
   }
-  scrollHandler2(event) {
+  /*scrollHandler2(event) {
       console.debug("Scroll Event");
       $('.btn-cot').css('position', 'fixed');
-  }
+  }*/
 
   constructor() {
   	this.imageUrlArray = [ 'assets/images/slide.jpg', 'assets/images/minimalista/lounge.jpg', 'assets/images/minimalista/diningroom.jpg' ]

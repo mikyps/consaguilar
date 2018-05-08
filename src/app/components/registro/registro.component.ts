@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ScrollToService } from 'ng2-scroll-to-el';
-
+import { Router, NavigationEnd } from '@angular/router';
 declare var jquery:any;
 declare var $ :any;
 
@@ -12,9 +12,15 @@ declare var $ :any;
 })
 export class RegistroComponent implements OnInit {
 
-  constructor(private scrollService: ScrollToService) { }
+  constructor(private scrollService: ScrollToService, private router: Router) { }
 
   ngOnInit() {
+    this.router.events.subscribe((evt) => {
+            if (!(evt instanceof NavigationEnd)) {
+                return;
+            }
+            window.scrollTo(0, 0)
+    });
   }
 
   option(element) {
