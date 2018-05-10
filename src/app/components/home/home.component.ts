@@ -1,6 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,  HostListener } from '@angular/core';
 import { NgxCarousel } from 'ngx-carousel';
 import { Router, NavigationEnd } from '@angular/router';
+declare var jquery:any;
+declare var $ :any;
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -9,8 +12,15 @@ import { Router, NavigationEnd } from '@angular/router';
 export class HomeComponent implements OnInit {
   public carouselOne: NgxCarousel;
   public imageUrlArray:Array<string>;
+  public imageUrlArray1:Array<string>;
+  @HostListener('window:scroll', ['$event']) 
+  scrollHandler(event) {
+      //console.debug("Scroll Event");
+      $('.redes').css('position', 'fixed');
+  }
   constructor(private router: Router) {
-    this.imageUrlArray = [ 'assets/images/building.jpg', 'assets/images/building.jpg', 'assets/images/building.jpg' ]
+    this.imageUrlArray1 = [ 'assets/images/building.jpg', 'assets/images/building.jpg', 'assets/images/building.jpg' ];
+    this.imageUrlArray = [ 'assets/images/slide.jpg', 'assets/images/minimalista/lounge.jpg', 'assets/images/minimalista/diningroom.jpg' ]
   }
 
   ngOnInit() {

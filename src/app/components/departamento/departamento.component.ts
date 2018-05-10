@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,  HostListener } from '@angular/core';
 import { Router, NavigationEnd, ActivatedRoute, Params } from '@angular/router';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Http, Response, Headers } from '@angular/http';
@@ -18,7 +18,11 @@ export class DepartamentoComponent implements OnInit {
   public title2:string;
   public htmltext:any;
   public show:string;
-
+  @HostListener('window:scroll', ['$event']) 
+  scrollHandler(event) {
+      //console.debug("Scroll Event");
+      $('.redes').css('position', 'fixed');
+  }
   
   constructor(private _route:ActivatedRoute,
   	private _router: Router,

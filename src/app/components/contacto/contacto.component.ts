@@ -1,6 +1,9 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, OnInit, ViewChild,  HostListener } from '@angular/core';
 import {  } from '@types/googlemaps';
 import { Router, NavigationEnd } from '@angular/router';
+declare var jquery:any;
+declare var $ :any;
+
 @Component({
   selector: 'app-contacto',
   templateUrl: './contacto.component.html',
@@ -9,6 +12,12 @@ import { Router, NavigationEnd } from '@angular/router';
 export class ContactoComponent implements OnInit {
   @ViewChild('gmap') gmapElement: any;
   map: google.maps.Map;
+  public imageUrlArray:Array<string>;
+  @HostListener('window:scroll', ['$event']) 
+  scrollHandler(event) {
+      //console.debug("Scroll Event");
+      $('.redes').css('position', 'fixed');
+  }
 
   constructor(private router: Router) { }
 
