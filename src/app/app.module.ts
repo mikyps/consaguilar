@@ -23,6 +23,9 @@ import { ScrollToModule } from 'ng2-scroll-to-el';
 import { MarcaComponent } from './components/marca/marca.component';
 import { ProyectoComponent } from './components/proyecto/proyecto.component';
 
+import 'hammerjs';
+import 'mousetrap';
+import {ModalGalleryModule} from 'angular-modal-gallery';
 @NgModule({
 
   declarations: [
@@ -45,7 +48,8 @@ import { ProyectoComponent } from './components/proyecto/proyecto.component';
     HttpClientModule,
     SlideshowModule,
     NgxCarouselModule,
-    ScrollToModule.forRoot()
+    ScrollToModule.forRoot(),
+    ModalGalleryModule.forRoot()
   ],
   providers: [appRoutingProviders],
   bootstrap: [AppComponent]

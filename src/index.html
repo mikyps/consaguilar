@@ -44,6 +44,21 @@
 
 </head>
 <body>
+<!--<div id="overlay1" class="overlay"></div>-->
+<div id="popup1" class="popup">
+    <a onClick="closeDialog('popup1');" class="close"></a>
+    <div>
+        <!-- YOUR CONTENT -->
+        
+  
+      <h2>Gracias</h2>
+        <div>
+  <p>Nos contactaremos con Usted a la brevedad posible.</p>
+    
+    </div>
+
+    </div>
+</div>
   <app-root></app-root>
 
       <!-- =-=-=-=-=-=-= JQUERY =-=-=-=-=-=-= -->
@@ -80,9 +95,89 @@
       <script src="assets/js/color-switcher.js"></script>
       <!-- Template Core JS -->
       <script src="assets/js/custom.js"></script>
+      <script src="https://smtpjs.com/v2/smtp.js"></script>
+      <script type="text/javascript">
+        function closeDialog(id) {
+            $('#'+id).css('position','absolute');
+            $('#'+id).animate({'left':'-100%'}, 500, function() {
+                $('#'+id).css('position','fixed');
+                $('#'+id).css('left','100%');
+                $('#overlay1').fadeOut('fast');
+            });
+         }
+        function cotizar(){
+          //var emailemresa = 'mail@constructoraaguilar.com';
+          var emailempresa = 'jennyfervl@hotmail.com';
+          var name = $('#name').val();
+          var whatsapp = $('#whatsapp').val();
+          var email = $('#email').val();
+          var message = $('#message').val();
+          Email.send(email,
+          emailempresa,
+          "FORMULARIO DE COTIZACION",
+          '<strong>Nombre</strong>: '+name+'<br /><br />'+'<strong>Whatsapp</strong>: '+whatsapp+'<br /><br />'+message,
+          "mail.constructoraaguilar.com",
+          "mail@constructoraaguilar.com",
+          "Mail123@",
+           function done(message) { 
+            //alert("sent")
+            /*$('#overlay1').show();
+            $('#overlay1').fadeIn('fast', function() {*/
+                $('#popup1').css('display','block');
+                $('#popup1').animate({'left':'30%'},500);
+            //});
 
+          }  
+          );
+
+        }
+      </script>
+<!--<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("user_rfbyranf39uy5nE12IQVC");
+   })();
+   function cotizar1(){
+    alert('ff');
+    emailjs.send("smtp_server","template_j5wcf7qL",{to_name: "James", message_html: "Check this out!"});
+   }
+</script>-->
+
+  
 
   <script type="text/javascript">
+  function cotizar(){
+  Email.send("winnyxp@gmail.com",
+"jennyfervl@hotmail.com",
+"This is a subject",
+"this is the body",
+"mail.constructoraaguilar.com",
+"mail@constructoraaguilar.com",
+"Mail123@");
+}
+
+  /*window.onbeforeunload = bye;
+  $( window ).bind( 'beforeunload', function() {
+    bye();
+    return false;
+} );
+
+  function bye(){
+  
+    $('#overlay').fadeIn('fast', function() {
+      $('#popup1').css('display','block');
+          $('#popup1').animate({'left':'30%'},500);
+      });
+
+    /*c = confirm('Te vas?');
+    if(c == true){
+      window.location = 'http://www.url_de_la_otra_web.com';
+    }
+    else{
+      return false;
+    }*/
+  /*}*/
+
         var offset = 300,
         offset_opacity = 1200,
         //duration of the top scrolling animation (in ms)
@@ -93,18 +188,48 @@
         $(window).scroll(function() {
             /*($(this).scrollTop() > offset) ? $back_to_top.addClass('cd-is-visible'): $back_to_top.removeClass('cd-is-visible cd-fade-out');*/
             if ($(this).scrollTop() > offset) {
-              alert('d');
+
                 //$('header nav').addClass('animated fadeIn');
                 $('.redes').css('position', 'fixed !important');
             }
             else {
-              alert('dd');
                 //$('header nav').addClass('animated fadeIn');
                 $('.redes').css('position', 'absolute');
             }
         });
 
+
+
+/*function openDialog() {
+  $('#overlay').fadeIn('fast', function() {
+    $('#popup').css('display','block');
+        $('#popup').animate({'left':'30%'},500);
+    });
+}
+
+function closeDialog(id) {
+  $('#'+id).css('position','absolute');
+  $('#'+id).animate({'left':'-100%'}, 500, function() {
+    $('#'+id).css('position','fixed');
+    $('#'+id).css('left','100%');
+    $('#overlay').fadeOut('fast');
+  });
+}*/
+
     
     </script>
+    <!--<div  id="popup1" class="popup1">
+    <a (click)="closeDialog('popup');" class="close"></a>
+    <div>
+        
+      <h2>Visitanos Pronto</h2>
+        <div>
+  <p>Le ofrecemos la oferta de descuentos mas el brochure y descuentos de empresas amigas</p>
+    
+    </div>
+
+    </div>
+</div>-->
+
 </body>
 </html>

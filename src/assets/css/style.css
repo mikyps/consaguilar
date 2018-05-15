@@ -8371,7 +8371,7 @@ h2{ font-size: 62px; color: #212021;  font-family: 'FuturaStdBold'; text-align: 
 .bck-plomo { background: url(../images/bck.jpg); color: #fff;  height: 160px; padding-top: 30px }
 .bck-red { background: url(../images/bckred.jpg); height: 203px; width: 100%;padding-top: 40px }
 .btn-ok{ background-image:url(../images/linered.png); background-position: right bottom; background-repeat: no-repeat; border:1px solid #797979; color: #fff; font-size: 40px; text-align: center; width: 500px; height: 105px; line-height: 105px; margin:0px auto;  }
-.btn-oks{ cursor: pointer; background-image:url(../images/linewhite.png); background-position: right bottom; background-repeat: no-repeat; border:1px solid #797979; color: #fff; font-size: 40px; text-align: center; width: 500px; height: 125px; line-height: 125px; margin:0px auto;  }
+.btn-oks{ cursor: pointer; background-image:url(../images/linewhite.png); background-position: right bottom; background-repeat: no-repeat; border:1px solid #797979; color: #fff; font-size: 40px; text-align: center; width: 500px; height: 125px; line-height: 125px; margin:0px auto; display: block;  }
 /**Footer**/
 footer { position: relative; background: url(../images/footer.jpg); background-position: center top; width: 100%; height: 468px }
 footer h2 { color: #fff; text-align: center;padding-top: 125px; font-size: 46px }
@@ -8421,3 +8421,76 @@ footer p { color: #fff; text-align: center; font-size: 20px; font-family: 'Futur
 .persons p { text-align: center; font-size: 30px; color: #000 }
 .personaliza h1 { margin: 50px 0px }
 .cursor { cursor: pointer; }
+
+.popup {
+    background-color: #740000;
+    color: #888888;
+    height: 380px;
+    left: 100%;
+    padding: 20px;
+    position: fixed;
+    right: 30%;
+    top: 25%;
+    width: 550px;
+    z-index: 1010000;
+    -moz-box-shadow: 0px 0px 10px 1px #888888;
+    -webkit-box-shadow: 0px 0px 10px 1px #888888;
+    box-shadow: 0px 0px 10px 1px #888888;
+    border-radius:10px;
+    -moz-border-radius:10px;
+}
+.popup h2{ color: #fff !important }
+.popup p{  font-size: 30px; text-align: center; }
+
+.popup1 {
+    background-color: #740000;
+    color: #888888;
+    height: 380px;
+    left: 100%;
+    padding: 20px;
+    position: fixed;
+    right: 30%;
+    top: 25%;
+    width: 550px;
+    z-index: 1010000;
+    -moz-box-shadow: 0px 0px 10px 1px #888888;
+    -webkit-box-shadow: 0px 0px 10px 1px #888888;
+    box-shadow: 0px 0px 10px 1px #888888;
+    border-radius:10px;
+    -moz-border-radius:10px;
+}
+.popup1 h2{ color: #fff !important }
+.popup1 p{  font-size: 30px; text-align: center; }
+
+.overlay {
+    background: #000000;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1000000;
+    opacity:0.5;
+}
+.overlay1 {
+    background: #000000;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1000000;
+    opacity:0.5;
+    display: none;
+}
+a.close {
+    background: url("../images/cancel.png") repeat scroll left top transparent;
+    cursor: pointer;
+    float: right;
+    height: 26px;
+    left: 32px;
+    position: relative;
+    top: -33px;
+    width: 26px;
+    z-index: 10000000;
+}

@@ -1,3 +1,38 @@
+<div id="overlay" class="overlay"></div>
+<div id="popup" class="popup">
+    <a (click)="closeDialog('popup');" class="close"></a>
+    <div>
+        <!-- YOUR CONTENT -->
+        
+	
+    	<h2>Bienvenido</h2>
+        <div>
+	<p>Le gustaria que un ejecutivo comercial se comunique con Usted?</p>
+    <div style="margin-top:0px;">
+            	<a class="btn-oks" [routerLink]="['/cotizacion']">Por supuesto</a>
+    </div>
+    </div>
+
+    </div>
+</div>
+
+<div [routerLink]="['/cotizacion']" id="popup1" class="popup1">
+    <a (click)="closeDialog('popup');" class="close"></a>
+    <div>
+        <!-- YOUR CONTENT -->
+        
+	
+    	<h2>Adios</h2>
+        <div>
+	<p>Le ofrecemos la oferta de descuentos mas el brochure y descuentos de empresas amigas</p>
+    <!--<div style="margin-top:0px;">
+            	<a class="btn-oks" [routerLink]="['/cotizacion']">Por supuesto</a>
+    </div>-->
+    </div>
+
+    </div>
+</div>
+
 <div class="slidecontent">
         <slideshow [showDots]="true" [dotColor]="'#696a6c'"  [imageUrls]="imageUrlArray"></slideshow>
         <div class="slide" >
@@ -297,3 +332,5 @@ changes. Lol Best company great prices and amazing staff!</p>
 <div class="bck-red">
 	<div class="btn-oks" [routerLink]="['/elige-departamento']">Elige Tu DEPARTAMENTO</div>
 </div>
+
+

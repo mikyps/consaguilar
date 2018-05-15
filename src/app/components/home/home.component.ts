@@ -23,7 +23,22 @@ export class HomeComponent implements OnInit {
     this.imageUrlArray = [ 'assets/images/slide.jpg', 'assets/images/minimalista/lounge.jpg', 'assets/images/minimalista/diningroom.jpg' ]
   }
 
+  closeDialog(id) {
+    $('#'+id).css('position','absolute');
+    $('#'+id).animate({'left':'-100%'}, 500, function() {
+        $('#'+id).css('position','fixed');
+        $('#'+id).css('left','100%');
+        $('#overlay').fadeOut('fast');
+    });
+ }
+
   ngOnInit() {
+
+    $('#overlay').fadeIn('fast', function() {
+        $('#popup').css('display','block');
+        $('#popup').animate({'left':'30%'},500);
+    });
+
     this.router.events.subscribe((evt) => {
             if (!(evt instanceof NavigationEnd)) {
                 return;
