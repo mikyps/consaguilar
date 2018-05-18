@@ -17,6 +17,7 @@ export class DepartamentoComponent implements OnInit {
   public title1:string;
   public title2:string;
   public htmltext:any;
+  public header:any;
   public show:string;
   @HostListener('window:scroll', ['$event']) 
   scrollHandler(event) {
@@ -24,6 +25,10 @@ export class DepartamentoComponent implements OnInit {
       $('.redes').css('position', 'fixed');
   }
   
+  page(tipo)
+  {
+    alert(tipo);
+  }
   constructor(private _route:ActivatedRoute,
   	private _router: Router,
     public _http: HttpClient) { 
@@ -34,7 +39,7 @@ export class DepartamentoComponent implements OnInit {
         if (params['tipo'] == 'domotica') {
           this.title1 = 'Un departamento';
           this.title2 ='Inteligente';
-          $('#project').hide();
+          this.header = '';
           this.htmltext = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean semper nulla nec orci tempus euismod. Integer hendrerit, diam a porta vestibulum, elit eros finibus nisl, nec ullamcorper ex Ut eu turpis.';
           this.imageUrlArray = [ 'assets/images/domotica/smart-home-3096219_1920.jpg','assets/images/domotica/smart-home-3096224_1920.jpg' ]
         }
@@ -42,7 +47,20 @@ export class DepartamentoComponent implements OnInit {
         	if (params['tipo'] == 'estilo' || params['tipo'] == 'minimalista') {
             this.title1 = 'Estilo';
             this.title2 ='Minimalista';
-            $('#project').show();
+            this.header = `<div class="project" id="project">
+            <div class="container">
+            <div class="row">
+              <div class="col-md-4  col-sm-4 col-xs-12">
+                  <a class="btn-line-w" [routerLink]="['/departamento/minimalista']" >Estilo Minimalista</a>
+                </div>
+                <div class="col-md-4  col-sm-4 col-xs-12">
+                </div>
+                <div class="col-md-4  col-sm-4 col-xs-12">
+                  <a class="btn-line-w" [routerLink]="['/departamento/contemporaneo']">Estilo Contemporaneo</a>
+                </div>
+            </div>
+            </div>
+        </div>`;
             this.htmltext = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean semper nulla nec orci tempus euismod. Integer hendrerit, diam a porta vestibulum, elit eros finibus nisl, nec ullamcorper ex Ut eu turpis.';
             this.imageUrlArray = [ 'assets/images/diningroom.jpg','assets/images/lounge.jpg' ]
         	}
@@ -51,7 +69,20 @@ export class DepartamentoComponent implements OnInit {
             if (params['tipo'] == 'contemporaneo') {
                 this.title1 = 'Estilo';
                 this.title2 ='Contemporaneo';
-                $('#project').show();
+                this.header = `<div class="project" id="project">
+            <div class="container">
+            <div class="row">
+              <div class="col-md-4  col-sm-4 col-xs-12">
+                  <a class="btn-line-w" (click)="page('minimalista')" [routerLink]="['/departamento/minimalista']" >Estilo Minimalista</a>
+                </div>
+                <div class="col-md-4  col-sm-4 col-xs-12">
+                </div>
+                <div class="col-md-4  col-sm-4 col-xs-12">
+                  <a class="btn-line-w" (click)="page('minimalista')" [routerLink]="['/departamento/contemporaneo']">Estilo Contemporaneo</a>
+                </div>
+            </div>
+            </div>
+        </div>`;
                 this.htmltext = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean semper nulla nec orci tempus euismod. Integer hendrerit, diam a porta vestibulum, elit eros finibus nisl, nec ullamcorper ex Ut eu turpis.';
                 this.imageUrlArray = [ 'assets/images/contemporaneo/indoors.jpg', 'assets/images/contemporaneo/kitchen.jpg' ]
             }
@@ -60,7 +91,7 @@ export class DepartamentoComponent implements OnInit {
               if (params['tipo'] == 'amoblado') {
                 this.title1 = 'Departamento';
                 this.title2 ='llave en mano';
-                $('#project').hide();
+                this.header = '';
                 this.htmltext = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean semper nulla nec orci tempus euismod. Integer hendrerit, diam a porta vestibulum, elit eros finibus nisl, nec ullamcorper ex Ut eu turpis.';
                 this.imageUrlArray = [ 'assets/images/muebles/04.jpg','assets/images/muebles/05.jpg','assets/images/muebles/06.jpg' ]
 
@@ -69,7 +100,7 @@ export class DepartamentoComponent implements OnInit {
               {
                 this.title1 = 'Departamento';
                 this.title2 ='llave en mano';
-                $('#project').hide();
+                this.header = '';
                 this.htmltext = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean semper nulla nec orci tempus euismod. Integer hendrerit, diam a porta vestibulum, elit eros finibus nisl, nec ullamcorper ex Ut eu turpis.';
                 this.imageUrlArray = [ 'assets/images/personalizado/interior-2685521_1920.jpg','assets/images/personalizado/interior-3012218_1920.png' ]
               }

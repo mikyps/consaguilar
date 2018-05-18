@@ -15,7 +15,7 @@
                   </div>
                   <!-- Header Top Right Social -->
                   <div class="header-right col-md-4 col-sm-6 col-xs-12 ">
-                     <div class="pull-right">
+                     <div class="cursor pull-right" [routerLink]="['proyecto-da-vinci']">
                         <h1>Proyecto</h1>
                         <h2>DA VINCI</h2>
                         
@@ -43,7 +43,7 @@
                            <!-- menu links -->
                            <ul class="menu-links">
                               <li [routerLinkActive]="['active']"><a [routerLink]="['/nosotros']" fragment="page">Nosotros</a></li>
-                              <li [routerLinkActive]="['active']"><a [routerLink]="['/cotizacion']" fragment="page">Cotizaciones</a></li>
+                              <li [routerLinkActive]="['active']"><a [routerLink]="['/cotizacion', 'inicio']" fragment="page">Cotizaciones</a></li>
                               <li [routerLinkActive]="['active']"><a [routerLink]="['/contacto']" fragment="page">Contacto</a></li>
                            </ul>
                            <!--<ul class="menu-search-bar">

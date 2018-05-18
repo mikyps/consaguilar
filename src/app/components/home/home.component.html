@@ -9,7 +9,7 @@
         <div>
 	<p>Le gustaria que un ejecutivo comercial se comunique con Usted?</p>
     <div style="margin-top:0px;">
-            	<a class="btn-oks" [routerLink]="['/cotizacion']">Por supuesto</a>
+            	<a class="btn-oks" [routerLink]="['/cotizacion', 'inicio-popup']">Por supuesto</a>
     </div>
     </div>
 
@@ -41,7 +41,9 @@
               <h2>TUS SUEÑOS</h2>
         </div>
         <div class="chat">
-          <img src="assets/images/chat.png">
+          <!--<img src="assets/images/chat.png">-->
+          
+
         </div>
         <div class="redes" (scroll)="scrollHandler($event)">
                 <a href=""><i class="fa fa-facebook"></i></a>
@@ -80,6 +82,103 @@
 	</div>
 	</div>
 </div>
+<!---->
+<!-- =-=-=-=-=-=-= IMAGE 1 =-=-=-=-=-=-= -->
+      <div class="modal fade modal-gallery" tabindex="-1" role="dialog" aria-hidden="true" id="image1">
+      <div class="modal-dialog">
+      <div class="modal-content">
+      <!--<div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>      
+      </div>-->
+      <div class="modal-body">
+      <div class="nospace">
+          <div class="row">         
+          <div class="red col-md-12  col-sm-12 col-xs-12">
+          	<img src="assets/images/gal-1.jpg">
+          </div>
+      	  </div>
+      </div>
+      </div>
+      </div>
+      </div>
+      </div>
+<!-- =-=-=-=-=-=-= IMAGE 2 =-=-=-=-=-=-= -->
+      <div class="modal fade modal-gallery" tabindex="-1" role="dialog" aria-hidden="true" id="image2">
+      <div class="modal-dialog">
+      <div class="modal-content">
+      <!--<div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>      
+      </div>-->
+      <div class="modal-body">
+      <div class="nospace">
+          <div class="row">         
+          <div class="red col-md-12  col-sm-12 col-xs-12">
+          	<img src="assets/images/gal-2.jpg">
+          </div>
+      	  </div>
+      </div>
+      </div>
+      </div>
+      </div>
+      </div>
+<!-- =-=-=-=-=-=-= IMAGE 3 =-=-=-=-=-=-= -->
+      <div class="modal fade modal-gallery" tabindex="-1" role="dialog" aria-hidden="true" id="image3">
+      <div class="modal-dialog">
+      <div class="modal-content">
+      <!--<div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>      
+      </div>-->
+      <div class="modal-body">
+      <div class="nospace">
+          <div class="row">         
+          <div class="red col-md-12  col-sm-12 col-xs-12">
+          	<img src="assets/images/gal-3.jpg">
+          </div>
+      	  </div>
+      </div>
+      </div>
+      </div>
+      </div>
+      </div>
+ <!-- =-=-=-=-=-=-= VIDEO 1 =-=-=-=-=-=-= -->
+      <div class="modal fade modal-gallery" tabindex="-1" role="dialog" aria-hidden="true" id="video1">
+      <div class="modal-dialog">
+      <div class="modal-content">
+      <!--<div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>      
+      </div>-->
+      <div class="modal-body">
+      <div class="nospace">
+          <div class="row">         
+          <div class="red col-md-12  col-sm-12 col-xs-12">
+          	<iframe width="100%" height="315" src="https://www.youtube.com/embed/ORRtb-5VQvM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+      	  </div>
+      </div>
+      </div>
+      </div>
+      </div>
+      </div>
+ <!-- =-=-=-=-=-=-= VIDEO 2 =-=-=-=-=-=-= -->
+      <div class="modal fade modal-gallery" tabindex="-1" role="dialog" aria-hidden="true" id="video2">
+      <div class="modal-dialog">
+      <div class="modal-content">
+      <!--<div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>      
+      </div>-->
+      <div class="modal-body">
+      <div class="nospace">
+          <div class="row">         
+          <div class="red col-md-12  col-sm-12 col-xs-12">
+          	<iframe width="100%" height="315" src="https://www.youtube.com/embed/ORRtb-5VQvM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+      	  </div>
+      </div>
+      </div>
+      </div>
+      </div>
+      </div>      
+<!---->
 <div class="gallery">
 	<div class="container">
 	<h1>Nuestra</h1>
@@ -88,20 +187,30 @@
 	<div class="row">
 		<div class="col-md-9  col-sm-9 col-xs-12">
 			<div class="col-md-4  col-sm-4 col-xs-12">
-				<img src="assets/images/gal-1.jpg">
+				<a href="#image1" data-toggle="modal">
+					<img src="assets/images/gal-1.jpg">
+				</a>
 			</div>
 			<div class="col-md-4  col-sm-4 col-xs-12">
+				<a href="#image2" data-toggle="modal">
 				<img src="assets/images/gal-2.jpg">
+				</a>
 			</div>
 			<div class="col-md-4  col-sm-4 col-xs-12">
+				<a href="#image3" data-toggle="modal">
 				<img src="assets/images/gal-3.jpg">
+				</a>
 			</div>
 
 			<div class="col-md-6  col-sm-6 col-xs-12">
+				<a href="#video1" data-toggle="modal">
 				<img src="assets/images/video-1.jpg">
+				</a>
 			</div>
 			<div class="col-md-6  col-sm-6 col-xs-12">
+				<a href="#video2" data-toggle="modal">
 				<img src="assets/images/video-2.jpg">
+				</a>
 			</div>
 		</div>
 		<div class="col-md-3  col-sm-3 col-xs-12">
@@ -191,9 +300,10 @@ changes. Lol Best company great prices and amazing staff!</p>
 			<img src="assets/images/marca_06.jpg">		
 		</div>
 	</div>	
-	<a class="btn-more">Ver Más</a>
+	<a class="btn-more" [routerLink]="['empresas-amigas']">Ver Más</a>
 	</div>
 </div>
+<div #place></div>
 <div class="davinci">
 	<h1>CARACTERISTICAS</h1>
 	<h2>PROYECTO DA VINCI</h2>
@@ -262,7 +372,7 @@ changes. Lol Best company great prices and amazing staff!</p>
 			</div>
 			
 		</div>
-		<div class="more"><img src="assets/images/more.png"></div>
+		<div class="more" [routerLink]="['/proyecto-da-vinci']"><img src="assets/images/more.png"></div>
 		
 	</div>
 </div>
@@ -282,12 +392,12 @@ changes. Lol Best company great prices and amazing staff!</p>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean semper nulla nec orci tempus euismod. Integer hendrerit, diam a porta vestibulum, elit eros finibus nisl, nec ullamcorper ex Ut eu turpis.</p>
 				</div>
 			</div>
-			<div class="nospace col-md-6  col-sm-6 col-xs-12">
+			<div class="cursor nospace col-md-6  col-sm-6 col-xs-12" [routerLink]="['departamento', 'domotica']">
 				<img src="assets/images/img-1.jpg">
 			</div>
 			<div class="clearfix"></div>
 
-			<div class="nospace col-md-6  col-sm-6 col-xs-12">
+			<div class="cursor nospace col-md-6  col-sm-6 col-xs-12" [routerLink]="['departamento', 'estilo']">
 				<img src="assets/images/img-2.jpg">
 			</div>
 			<div class="nospace col-md-6  col-sm-6 col-xs-12" [routerLink]="['departamento', 'estilo']">
@@ -308,12 +418,12 @@ changes. Lol Best company great prices and amazing staff!</p>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean semper nulla nec orci tempus euismod. Integer hendrerit, diam a porta vestibulum, elit eros finibus nisl, nec ullamcorper ex Ut eu turpis.</p>
 				</div>
 			</div>
-			<div class="nospace col-md-6  col-sm-6 col-xs-12">
+			<div class="cursor nospace col-md-6  col-sm-6 col-xs-12" [routerLink]="['departamento', 'personalizado']">
 				<img src="assets/images/img-3.jpg">
 			</div>
 			<div class="clearfix"></div>
 
-			<div class="nospace col-md-6  col-sm-6 col-xs-12">
+			<div class="cursor nospace col-md-6  col-sm-6 col-xs-12" [routerLink]="['departamento', 'amoblado']">
 				<img src="assets/images/img-4.jpg">
 			</div>
 			<div class="nospace col-md-6  col-sm-6 col-xs-12" [routerLink]="['departamento', 'amoblado']">

@@ -33,19 +33,19 @@ export class HomeComponent implements OnInit {
  }
 
   ngOnInit() {
-
+    //Mostrar Popup
     $('#overlay').fadeIn('fast', function() {
         $('#popup').css('display','block');
         $('#popup').animate({'left':'30%'},500);
     });
-
+    //Evento de scroll
     this.router.events.subscribe((evt) => {
             if (!(evt instanceof NavigationEnd)) {
                 return;
             }
             window.scrollTo(0, 0)
     });
-    
+    //Testimonios
   	this.carouselOne = {
       grid: {xs: 1, sm: 2, md: 2, lg: 2, all: 0},
       slide: 2,

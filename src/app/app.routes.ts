@@ -7,16 +7,20 @@ import {
   ContactoComponent,
   NosotrosComponent,
   DepartamentoComponent,
-  RegistroComponent
+  RegistroComponent,
+  ProyectoComponent,
+  MarcaComponent,
 } from "./components/index.page";
 
 const app_routes: Routes = [
   { path: '', component: HomeComponent },
-  { path: 'cotizacion', component: CotizacionComponent },
+  { path: 'cotizacion/:tipo', component: CotizacionComponent },
   { path: 'contacto', component: ContactoComponent },
   { path: 'nosotros', component: NosotrosComponent },
   { path: 'elige-departamento', component: RegistroComponent },
   { path: 'departamento/:tipo', component: DepartamentoComponent },
+  { path: 'proyecto-da-vinci', component: ProyectoComponent },
+  { path: 'empresas-amigas', component: MarcaComponent },
   { path: '**', pathMatch: 'full', redirectTo: '' }
 ];
 

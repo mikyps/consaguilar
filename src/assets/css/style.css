@@ -8494,3 +8494,5 @@ a.close {
     width: 26px;
     z-index: 10000000;
 }
+.modal-gallery img { width: 100% }
+.caracteristicas .link { color: #740000 !important; font-size: 30px; text-align: center; }

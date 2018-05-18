@@ -1,5 +1,5 @@
 import { Component, OnInit,  HostListener } from '@angular/core';
-import { Router, NavigationEnd } from '@angular/router';
+import { Router, NavigationEnd, ActivatedRoute, Params } from '@angular/router';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Http, RequestOptions } from "@angular/http";
 import { Observable } from 'rxjs/Observable';
@@ -17,29 +17,41 @@ declare var $ :any;
 })
 export class CotizacionComponent implements OnInit {
   public imageUrlArray:Array<string>;
+  private parameter:string;
     public recipient: string;
     public subject: string;
     public message: string;
     private mailgunUrl: string = "sandboxce55dce9b57e4cb5a8b73b4cbcfd3896.mailgun.org";
     private apiKey: string = "key-be0c2995e07d3fb7b1e05f36e0a968c3";
-
     public name: string;
     public whatsapp: string;
+    public tipo:string;
 
   @HostListener('window:scroll', ['$event']) 
   scrollHandler(event) {
       //console.debug("Scroll Event");
       $('.redes').css('position', 'fixed');
   }
-  constructor(private router: Router, public _http: HttpClient, private _requestService: RequestService,/*, private http: Http*/) { }
-
-  ngOnInit() {
-  	this.router.events.subscribe((evt) => {
+  constructor(private _route:ActivatedRoute, private router: Router, public _http: HttpClient, private _requestService: RequestService,/*, private http: Http*/) { 
+    this._route.params.forEach((params: Params)=>{
+        //alert(params['tipo']);
+        this.parameter = params['tipo'];
+        
+       
+    });
+    //Top Page
+    this.router.events.subscribe((evt) => {
             if (!(evt instanceof NavigationEnd)) {
                 return;
             }
             window.scrollTo(0, 0)
     });
+  }
+
+  ngOnInit() {
+    //alert(this.parameter);
+    $('#tipo').val(this.parameter);
+    
   }
 public send() { 
         this.subject = 'Contact  Form';//" + this.recipient + "

@@ -96,6 +96,7 @@
       <!-- Template Core JS -->
       <script src="assets/js/custom.js"></script>
       <script src="https://smtpjs.com/v2/smtp.js"></script>
+      <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false&key=AIzaSyCCgRjnO4H9xH86BMJly-rvnjxhBy6oyJo"></script>
       <script type="text/javascript">
         function closeDialog(id) {
             $('#'+id).css('position','absolute');
@@ -107,15 +108,16 @@
          }
         function cotizar(){
           //var emailemresa = 'mail@constructoraaguilar.com';
-          var emailempresa = 'jennyfervl@hotmail.com';
+          var emailempresa = 'jennyfervl@hotmail.com';//mikyps@gmail.com
           var name = $('#name').val();
           var whatsapp = $('#whatsapp').val();
           var email = $('#email').val();
           var message = $('#message').val();
+          var tipo = $('#tipo').val();
           Email.send(email,
           emailempresa,
           "FORMULARIO DE COTIZACION",
-          '<strong>Nombre</strong>: '+name+'<br /><br />'+'<strong>Whatsapp</strong>: '+whatsapp+'<br /><br />'+message,
+          '<strong>Envio el formulario desde la pagina:</strong>: '+tipo+'<br /><br />'+'<strong>Nombre</strong>: '+name+'<br /><br />'+'<strong>Celular</strong>: '+whatsapp+'<br /><br />'+message,
           "mail.constructoraaguilar.com",
           "mail@constructoraaguilar.com",
           "Mail123@",
@@ -146,7 +148,7 @@
   
 
   <script type="text/javascript">
-  function cotizar(){
+  /*function cotizar(){
   Email.send("winnyxp@gmail.com",
 "jennyfervl@hotmail.com",
 "This is a subject",
@@ -154,7 +156,7 @@
 "mail.constructoraaguilar.com",
 "mail@constructoraaguilar.com",
 "Mail123@");
-}
+}*/
 
   /*window.onbeforeunload = bye;
   $( window ).bind( 'beforeunload', function() {
@@ -230,6 +232,11 @@ function closeDialog(id) {
 
     </div>
 </div>-->
+<!-- BEGIN JIVOSITE CODE {literal} -->
+<script type='text/javascript'>
+(function(){ var widget_id = 'OyfJxULZVc';var d=document;var w=window;function l(){
+var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = '//code.jivosite.com/script/widget/'+widget_id; var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss);}if(d.readyState=='complete'){l();}else{if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();</script>
+<!-- {/literal} END JIVOSITE CODE -->
 
 </body>
 </html>

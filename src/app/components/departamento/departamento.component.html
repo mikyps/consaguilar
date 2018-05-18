@@ -6,21 +6,8 @@
                 <a href=""><i class="fa fa-twitter"></i></a>
                 <a href=""><i class="fa fa-instagram"></i></a>
         </div>
+<div [innerHTML]="header"></div>  
 
-<div class="project" id="project">
-    <div class="container">
-    <div class="row">
-    	<div class="col-md-4  col-sm-4 col-xs-12">
-        	<a class="btn-line-w" [routerLink]="['/departamento/minimalista']" >Estilo Minimalista</a>
-        </div>
-        <div class="col-md-4  col-sm-4 col-xs-12">
-        </div>
-        <div class="col-md-4  col-sm-4 col-xs-12">
-        	<a class="btn-line-w" [routerLink]="['/departamento/contemporaneo']">Estilo Contemporaneo</a>
-        </div>
-    </div>
-    </div>
-</div>
 <div class="gallery">
 	<div class="container">
 	<h1>{{ title1 }}</h1>
@@ -39,5 +26,5 @@
 	</div>
 </div>
 <div class="bck-plomo">
-	<div class="btn-ok" [routerLink]="['/cotizacion']">COTIZA</div>
+	<div class="btn-ok" [routerLink]="['/cotizacion', 'caracteristicas-departamento']">COTIZA</div>
 </div>
