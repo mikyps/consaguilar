@@ -6598,7 +6598,7 @@ span.app-store-btn {
 	border-bottom: 1px solid #e2e2e2;
 	border-radius: 4px 4px 0 0;
 	min-height: 16.43px;
-	padding: 15px 20px;
+	padding: 0px;/*15px 20px;*/
 }
 .modal-body .btn {
 	padding: 10px 20px;
@@ -8496,3 +8496,5 @@ a.close {
 }
 .modal-gallery img { width: 100% }
 .caracteristicas .link { color: #740000 !important; font-size: 30px; text-align: center; }
+button.close { padding:5px 10px 10px 10px !important; opacity: 1 !important; background: #740000; right:-10px; border-radius: 30px; position: absolute; top:-25px;  }
+button.close span { color: #fff }
