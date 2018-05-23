@@ -9,14 +9,14 @@
         <div>
 	<p>Le gustaria que un ejecutivo comercial se comunique con Usted?</p>
     <div style="margin-top:0px;">
-            	<a class="btn-oks" [routerLink]="['/cotizacion', 'inicio-popup']">Por supuesto</a>
+            	<a class="btn-oks-p" [routerLink]="['/cotizacion', 'inicio-popup']">Por supuesto</a>
     </div>
     </div>
 
     </div>
 </div>
 
-<div [routerLink]="['/cotizacion']" id="popup1" class="popup1">
+<div [routerLink]="['/cotizacion', 'inicio-popup']" id="popup1" class="popup1">
     <a (click)="closeDialog('popup');" class="close"></a>
     <div>
         <!-- YOUR CONTENT -->
@@ -66,7 +66,7 @@
 </div>
 <div class="imgproject">
 	<slideshow [showDots]="true" [dotColor]="'#696a6c'"  [imageUrls]="imageUrlArray1"></slideshow>
-	<div class="btn-cot cursor" [routerLink]="['/cotizacion']"></div>
+	<div class="btn-cot cursor" [routerLink]="['/cotizacion', 'pagina-inicio']"></div>
 	<div class="project-text">
 		<p>CONOCE MAS SOBRE NUESTRO NUEVO PROYECTO</p>
 		<div class="line1"></div>
